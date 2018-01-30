@@ -19,7 +19,7 @@ public class BooksController {
 	private final static String drv = "com.mysql.jdbc.Driver";
 	//Cadena de conexi�n
 	private final static String db = "jdbc:mysql://localhost:3306/DATABASE HERE";
-	private final static String user = "USER HERE";
+	private final static String user = "USER HERE!";
 	private final static String pass = "PASSWORD HERE";
 	
 	Connection cn; //Se importa la librer�a de java.sql

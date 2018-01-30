@@ -62,7 +62,7 @@
             }
 
             out.println("</table>");
-            out.println("<input type=\"submit\" value=\"Delete\">");
+            out.println("<input id=\"delb\" type=\"submit\" value=\"Delete\" disabled>");
             out.println("</form>");
 
             try {
@@ -73,6 +73,6 @@
             }
 
         %>
-        <input id="delb" type="submit" value="Back" onclick='location.href = "index.html"' disabled/>
+        <input type="submit" value="Back" onclick='location.href = "index.html"'/>
     </body>
 </html>
