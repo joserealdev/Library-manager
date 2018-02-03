@@ -1,3 +1,36 @@
 body{
     background-color: cyan;
+    margin:0;
+}
+.btn {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #000000;
+    background: rgb(88, 255, 199);
+    padding: 10px 20px 10px 20px;
+    border: solid rgb(31, 202, 145) 1px;
+    text-decoration: none;
+}
+.btn:hover {
+    background: rgb(42, 255, 184);
+    text-decoration: none;
+}
+
+h1{
+    background-color: rgb(42, 255, 184);
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+table{
+    margin-top: 5%; 
+    display: flex;
+    justify-content: center;
 }

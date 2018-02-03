@@ -29,7 +29,7 @@
             } catch (ClassNotFoundException | SQLException e) {
                 response.sendRedirect("errors/connection.html");
             }
-            if(request.getParameter("isbn")==null){
+            if(request.getParameter("isbnm")==null){
                 if(request.getParameter("ModifyBk")==null){
 
                     ArrayList<Book> libros = null;
@@ -74,7 +74,7 @@
                     out.println("Title: <input type=\"text\" name=\"title\" placeholder=\"Insert title\" value=\""+found.getTitulo()+"\" required><br>");
                     out.println("Author: <input type=\"text\" name=\"author\" placeholder=\"Insert author\" value=\""+found.getAutor()+"\" required><br>");
                     out.println("Editorial: <input type=\"text\" name=\"editorial\" placeholder=\"Insert editorial\" value=\""+found.getEditorial()+"\" required><br>");
-                    out.println("ISBN: <input type=\"text\" name=\"isbn\" placeholder=\"Insert a valid ISBN-13\" value=\""+request.getParameter("ModifyBk")+"\" disabled required><br>");
+                    out.println("ISBN: <input type=\"text\" name=\"isbnm\" placeholder=\"Insert a valid ISBN-13\" value=\""+request.getParameter("ModifyBk")+"\" disabled required><br>");
                     out.println("<input type=\"text\" name=\"loandate\" value=\""+found.getFechaPrestamo()+"\" hidden>");
                     out.println("<input type=\"text\" name=\"returndate\" value=\""+found.getFechaDevolucion()+"\" hidden>");
                     out.println("<input type=\"text\" name=\"borrowed\" value=\""+found.isPrestado()+"\" hidden>");
@@ -87,7 +87,7 @@
                 String title=request.getParameter("title");
                 String author=request.getParameter("author");
                 String editorial=request.getParameter("editorial");
-                String isbn=request.getParameter("isbn");
+                String isbn=request.getParameter("isbnm");
                 boolean borrowed=Boolean.parseBoolean(request.getParameter("borrowed"));
                 Fecha loandate=new Fecha(request.getParameter("loandate"));
                 Fecha returndate=new Fecha(request.getParameter("returndate"));
